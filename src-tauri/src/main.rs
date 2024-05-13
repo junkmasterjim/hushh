@@ -75,7 +75,8 @@ fn main() {
               }
           }
           _ => {}
-      })
+      }).setup(|app|
+        Ok(app.set_activation_policy(tauri::ActivationPolicy::Accessory)))
       .run(tauri::generate_context!())
-      .expect("error while running tauri application");
+      .expect("error while running tauri application")
 }

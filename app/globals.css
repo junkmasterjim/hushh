@@ -68,6 +68,10 @@
 
 @layer base {
 	.appContainer {
-		@apply bg-neutral-50 text-neutral-900 shadow-lg rounded-xl border-neutral-950 border px-4 py-3;
+		@apply bg-background text-foreground shadow-lg rounded-xl border-neutral-950 border px-4 py-3;
+	}
+
+	* {
+		@apply select-none;
 	}
 }
