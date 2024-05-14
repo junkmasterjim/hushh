@@ -52,9 +52,7 @@ jobs:
 
       - name: install frontend dependencies
         # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
-        run: |
-          bun install
-          bun tauri build
+        run: bun install
 
       - uses: tauri-apps/tauri-action@v0
         env:
