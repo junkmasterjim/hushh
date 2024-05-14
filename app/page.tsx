@@ -13,7 +13,6 @@ export type Noise = {
 	isPlaying: boolean;
 };
 
-
 const Home = () => {
 	const [noise, setNoise] = useState<{
 		type: Noise["type"];
