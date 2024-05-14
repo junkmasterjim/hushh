@@ -28,12 +28,14 @@ export const NoiseSelector = ({
 			<RadioGroup
 				disabled={noise.isPlaying}
 				value={noise.type}
-				onValueChange={(e) =>
-					setNoise({
-						...noise,
-						type: e as Noise["type"],
-					})
-				}
+				onValueChange={(e) => {
+					if (!noise.isPlaying) {
+						setNoise({
+							...noise,
+							type: e as Noise["type"],
+						});
+					}
+				}}
 			>
 				{NOISE_TYPES.map((type) => (
 					<li
@@ -42,12 +44,14 @@ export const NoiseSelector = ({
 							!noise.isPlaying ? "cursor-pointer" : "cursor-not-allowed"
 						)}
 						key={type}
-						onClick={() =>
-							setNoise({
-								...noise,
-								type: type as Noise["type"],
-							})
-						}
+						onClick={() => {
+							if (!noise.isPlaying) {
+								setNoise({
+									...noise,
+									type: type as Noise["type"],
+								});
+							}
+						}}
 					>
 						<Label
 							className={cn(
