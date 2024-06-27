@@ -12,7 +12,7 @@ hushh generates calming ambient noises to help you relax, fall asleep, or focus.
 * Available only on macOS (for now!)
 
 ### Installation
-**[Download hushh for MacOS](https://dropbox.com/scl/fi/0yw86sko4qvjph8cp0jvz/hushh.zip?rlkey=ykkapejh4x9g3fvm05qc2wz8j&st=7qlvudlr&dl=1)** 
+**[Download hushh for MacOS](https://hushh.npitt.dev)** 
 
 Simply unzip the file and enjoy!
 
