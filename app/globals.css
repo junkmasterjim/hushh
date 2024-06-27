@@ -3,75 +3,129 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--background: 0 0% 96%;
-		--foreground: 0 0% 3.9%;
+    :root {
+        --background: 0 0% 98%;
+        --foreground: 228 8% 24%;
+        --muted: 0 12% 90%;
+        --muted-foreground: 0 12% 30%;
+        --popover: 0 0% 95%;
+        --popover-foreground: 228 8% 14%;
+        --card: 0 0% 96%;
+        --card-foreground: 228 8% 19%;
+        --border: 0 0% 93%;
+        --input: 0 0% 90%;
+        --primary: 216 12% 8%;
+        --primary-foreground: 216 0% 90%;
+        --secondary: 216 0% 85%;
+        --secondary-foreground: 216 2% 15%;
+        --accent: 0 0% 83%;
+        --accent-foreground: 0 0% 23%;
+        --destructive: 2 95% 44%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 216 12% 8%;
+        --radius: 0.5rem;
+    }
 
-		--card: 0 0% 96%;
-		--card-foreground: 0 0% 3.9%;
+    .dark {
+        --background: 210 12% 16%;
+        --foreground: 214 13% 90%;
+        --muted: 210 12% 20%;
+        --muted-foreground: 210 12% 70%;
+        --popover: 210 12% 13%;
+        --popover-foreground: 214 13% 100%;
+        --card: 210 12% 14%;
+        --card-foreground: 214 13% 95%;
+        --border: 210 2% 21%;
+        --input: 210 2% 24%;
+        --primary: 214 13% 90%;
+        --primary-foreground: 214 13% 30%;
+        --secondary: 214 3% 25%;
+        --secondary-foreground: 214 3% 85%;
+        --accent: 210 12% 31%;
+        --accent-foreground: 210 12% 91%;
+        --destructive: 1 100% 66.56%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 214 13% 90%;
+        --radius: 0.5rem;
+    }
 
-		--popover: 0 0% 96%;
-		--popover-foreground: 0 0% 3.9%;
+    .gruvbox-light {
+        --background: 53 74% 91%;
+        --foreground: 20 5% 22%;
+        --muted: 53 12% 87%;
+        --muted-foreground: 53 12% 27%;
+        --popover: 53 74% 88%;
+        --popover-foreground: 20 5% 12%;
+        --card: 53 74% 89%;
+        --card-foreground: 20 5% 17%;
+        --border: 53 64% 86%;
+        --input: 53 64% 83%;
+        --primary: 20 5% 22%;
+        --primary-foreground: 20 5% 82%;
+        --secondary: 0 0% 75%;
+        --secondary-foreground: 0 0% 15%;
+        --accent: 53 74% 76%;
+        --accent-foreground: 53 74% 16%;
+        --destructive: 9 95% 23%;
+        --destructive-foreground: 9 95% 83%;
+        --ring: 20 5% 22%;
+        --radius: 0.5rem;
+    }
 
-		--primary: 0 0% 9%;
-		--primary-foreground: 0 0% 98%;
+    .gruvbox-dark {
+        --background: 20 3% 19%;
+        --foreground: 43 59% 81%;
+        --muted: 20 12% 23%;
+        --muted-foreground: 20 12% 73%;
+        --popover: 20 3% 16%;
+        --popover-foreground: 43 59% 91%;
+        --card: 20 3% 17%;
+        --card-foreground: 43 59% 86%;
+        --border: 0 0% 24%;
+        --input: 0 0% 27%;
+        --primary: 43 59% 81%;
+        --primary-foreground: 43 59% 21%;
+        --secondary: 43 30% 25%;
+        --secondary-foreground: 43 30% 85%;
+        --accent: 20 3% 34%;
+        --accent-foreground: 20 3% 94%;
+        --destructive: 3 84% 51%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 43 59% 81%;
+        --radius: 0.5rem;
+    }
 
-		--secondary: 0 0% 90%;
-		--secondary-foreground: 0 0% 9%;
-
-		--muted: 0 0% 90%;
-		--muted-foreground: 0 0% 45.1%;
-
-		--accent: 0 0% 90%;
-		--accent-foreground: 0 0% 9%;
-
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-
-		--border: 0 0% 89.8%;
-		--input: 0 0% 89.8%;
-		--ring: 0 0% 3.9%;
-
-		--radius: 0.5rem;
-	}
-
-	.dark {
-		--background: 0 0% 3.9%;
-		--foreground: 0 0% 98%;
-
-		--card: 0 0% 3.9%;
-		--card-foreground: 0 0% 98%;
-
-		--popover: 0 0% 3.9%;
-		--popover-foreground: 0 0% 98%;
-
-		--primary: 0 0% 98%;
-		--primary-foreground: 0 0% 9%;
-
-		--secondary: 0 0% 14.9%;
-		--secondary-foreground: 0 0% 98%;
-
-		--muted: 0 0% 14.9%;
-		--muted-foreground: 0 0% 63.9%;
-
-		--accent: 0 0% 14.9%;
-		--accent-foreground: 0 0% 98%;
-
-		--destructive: 0 62.8% 30.6%;
-		--destructive-foreground: 0 0% 98%;
-
-		--border: 0 0% 14.9%;
-		--input: 0 0% 14.9%;
-		--ring: 0 0% 83.1%;
-	}
+    .terminal {
+        --background: 120 100% 3%;
+        --foreground: 120 100% 37%;
+        --muted: 120 12% 15%;
+        --muted-foreground: 120 12% 65%;
+        --popover: 120 100% 0%;
+        --popover-foreground: 120 100% 47%;
+        --card: 120 100% 1%;
+        --card-foreground: 120 100% 42%;
+        --border: 120 90% 8%;
+        --input: 120 90% 11%;
+        --primary: 120 100% 37%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 120 30% 75%;
+        --secondary-foreground: 120 30% 15%;
+        --accent: 120 100% 18%;
+        --accent-foreground: 120 100% 78%;
+        --destructive: 9 95% 52%;
+        --destructive-foreground: 0 0% 100%;
+        --ring: 120 100% 37%;
+        --radius: 0.5rem;
+    }
 }
 
 @layer base {
-	.appContainer {
-		@apply bg-background text-foreground shadow-lg rounded-xl border-neutral-950 border px-4 py-3;
-	}
+    .appContainer {
+        @apply bg-gradient-to-b from-background to-secondary/25 bg-background from-30% text-foreground shadow rounded-xl px-4 py-3 mt-2;
+        @apply before:size-0 before:absolute before:top-0 before:left-[calc(50%-8px)] before:origin-right before:border-l-8 before:border-r-8 before:border-b-8 before:border-r-white/0 before:border-l-white/0 before:border-background;
+    }
 
-	* {
-		@apply select-none;
-	}
+    * {
+        @apply select-none tracking-tight;
+    }
 }
