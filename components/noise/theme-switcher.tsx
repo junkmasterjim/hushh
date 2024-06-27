@@ -1,12 +1,5 @@
 import React from "react";
 import { useTheme } from "next-themes";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Moon, Sun, Palette, Terminal, Box, Laptop, Check } from "lucide-react";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import {
