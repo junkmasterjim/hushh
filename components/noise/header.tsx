@@ -48,6 +48,11 @@ const Buttons = ({
     volume: (noise.volume - 50) / 100,
     loop: true,
   });
+  const brownNoise = new Howl({
+    src: ["/noise/brown-noise.mp3"],
+    volume: noise.volume / 100,
+    loop: true,
+  });
   const rain1Noise = new Howl({
     src: ["/noise/rain-1.mp3"],
     volume: noise.volume / 100,
@@ -60,7 +65,7 @@ const Buttons = ({
   });
   const fireNoise = new Howl({
     src: ["/noise/fire.mp3"],
-    volume: (noise.volume + 25) / 100,
+    volume: (noise.volume + 50) / 100,
     loop: true,
   });
   const oceanNoise = new Howl({
@@ -83,6 +88,9 @@ const Buttons = ({
           break;
         case "pink":
           pinkNoise.play();
+          break;
+        case "brownian":
+          brownNoise.play();
           break;
         case "rain 1":
           rain1Noise.play();

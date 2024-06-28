@@ -14,6 +14,7 @@ export const NoiseSelector = ({
   const NOISE_TYPES: Array<Noise["type"]> = [
     "white",
     "pink",
+    "brownian",
     "rain 1",
     "rain 2",
     "fire",

@@ -9,7 +9,15 @@ import { NoiseSelector } from "@/components/noise/noise-selector";
 import { useSpacebarPlayPause } from "@/lib/useSpacebarPlayPause";
 
 export type Noise = {
-  type: "white" | "pink" | "rain 1" | "rain 2" | "fire" | "ocean" | "ocean 2";
+  type:
+    | "white"
+    | "pink"
+    | "brownian"
+    | "rain 1"
+    | "rain 2"
+    | "fire"
+    | "ocean"
+    | "ocean 2";
   volume: number;
   isPlaying: boolean;
 };
